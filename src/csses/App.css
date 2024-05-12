@@ -1,0 +1,136 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button {
+  border-radius: 5px;
+  border: 1px solid transparent;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+
+.gDiv{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todoF{
+  margin-top: 5%;
+  display: flex;
+  height: 8%;
+  width: 100%;
+  justify-content: center;
+}
+
+.tasks{
+  margin-top: 7%;
+  width: 90%;
+  height: 73%;
+  align-self: center;
+  overflow: auto;
+}
+
+.todo-btn{
+  border: 1px solid gray;
+  width: 10%;
+  height: 100%;
+  margin-left: 1%;
+}
+
+.todo-input{
+  border: none;
+  border-radius: 3px;
+}
+
+.TodoWrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a1a1a;
+  position: relative;
+  width: 22%;
+  height: 70%;
+  padding-bottom: 1%;
+  border-radius: 5px;
+}
+
+.task-div{
+  display: flex;
+  background-color: #242424;
+  width: 96%;
+  height: 14%;
+  margin: 2%;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.task-title{
+  margin: 0;
+  margin-left: 5%;
+  width: 80%;
+}
+
+.task-editing-form{
+  margin: 0;
+  margin-left: 5%;
+  width: 80%;
+}
+
+.task-editing-input{
+  border: none;
+  background-color: #242424;
+}
+
+.task-edit{
+  margin-right: 1%;
+  width: 12%;
+  height: 60%;
+  background-image: url("../assets/edit.png");
+  background-size: 50%;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;;
+}
+
+.task-delete{
+  width: 12%;
+  height: 60%;
+  background-image: url("../assets/trash.png");
+  background-size: 50%;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+}
